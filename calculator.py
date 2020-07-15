@@ -46,4 +46,11 @@ def equlbut():
 def clrbut():
     textin.set('')
 
+metext = Entry(window, font=("Courier New", 12, 'bold'), textvar=textin, width=25, bd=5, bg='powder blue')
+metext.pack()
+
+but1 = Button(window, padx=14, pady=14, bd=4, bg='white', command=lambda: clickbut(1), text="1",
+                   font=("Courier New", 16, 'bold'))
+but1.place(x=10, y=100)
+
 window.mainloop()
